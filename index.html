@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/datepicker.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="inner-layer">
+    <div class="container">
+      <div class="row no-margin">
+        <div class="col-sm-7">
+          <div class="content">
+            <h1>Book You Slot Now and Save your time</h1>
+            <p>24/7 Care is available in Medicare+</p>
+            <h2>For Help Call : +189-123-453</h2>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="form-data">
+            <div class="form-head">
+              <h2>Book Appointemnt</h2>
+            </div>
+            <div class="form-body">
+              <div class="row form-row">
+                <input type="text" placeholder="Enter Full name" class="form-control">
+              </div>
+              <div class="row form-row">
+                <input type="text" placeholder="Enter Mobile Number" class="form-control">
+              </div>
+              <div class="row form-row">
+                <input type="text" placeholder="Enter Email Adreess" class="form-control">
+              </div>
+              <div class="row form-row">
+                <input id="dat" type="text" placeholder="Appointment Date" class="form-control">
+              </div>
+
+
+
+              <div class="row form-row">
+                <label> Gender </label>
+                <div class="col-sm-8 col-lg-8">
+                  <input type="radio" name="gender" value="male"> Male
+                  <input type="radio" name="gender" value="female"> Female
+                </div>
+
+
+
+                <h6>Address Details</h6>
+
+                <div class="row form-row">
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Enter Area" class="form-control">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Enter City" class="form-control">
+                  </div>
+                </div>
+                <div class="row form-row">
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Enter State" class="form-control">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" placeholder="Postal Code" class="form-control">
+                  </div>
+                </div>
+
+                <div class="row form-row">
+                  <button class="btn btn-success btn-appointment">
+                    Book Appointment
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#dat").datepicker();
+      })
+    </script>
+
+<div class="alan-btn"></div>
+<script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "f49dd2343aa07df0acc4fe12f1a71eca2e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+      if (commandData.command === "go:back") {
+        //call client code that will react on the received command
+      }
+      if (commandData.command === "scrolldown") {
+          window.scrollTo(1000, 800);
+      }
+      if (commandData.command === "scrollup"){
+          window.scrollTo(500,800);
+      }
+      if (commandData.command === "homePage") {
+          window.location.replace("01_03_home_3.html");
+      }
+      if (commandData.command === "gallerypage") {
+          window.location.replace("02_05_gallery.html");
+      }
+      if (commandData.command === "departmentpage") {
+          window.location.replace("04_01_departments.html");
+      }
+      if (commandData.command === "doctorpage") {
+          window.location.replace("02_02_doctor.html");
+      }
+      if (commandData.command === "doctordetailspage") {
+          window.location.replace("02_03_doctor_details.html");
+      }
+      if (commandData.command === "shoppage") {
+          window.location.replace("06_01_shop.html");
+      }
+      if (commandData.command === "singledepartmentpage") {
+          window.location.replace("04_02_single_department.html");
+      }
+      if (commandData.command === "cartpage") {
+          window.location.replace("06_03_cart.html");
+      }
+      if (commandData.command === "aboutpage") {
+          window.location.replace("02_01_about.html");
+      }
+      if (commandData.command === "checkoutpage") {
+          window.location.replace("06_04_checkout.html");
+      }
+      if (commandData.command === "contacttpage") {
+          window.location.replace("02_04_contact.html");
+      }
+      if (commandData.command === "appointmentpage") {
+          window.location.replace("index.html");
+      }
+      
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
+
+</body>
+
+</html>
